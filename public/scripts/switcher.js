@@ -14,10 +14,10 @@ let indexThemeConfiguration = [
         primaryHoverColor: "#2fb86e",
     },
     {
-        primaryColor: "rgb(0,0,255)",
+        primaryColor: "rgb(0,0,150)",
         backgroundColor: "red",
         titleColor: "unset",
-        primaryHoverColor: "rgb(0,0,200)",
+        primaryHoverColor: "rgb(0,0,255)",
         mainColor: "unset"
     }
 ]
@@ -31,10 +31,10 @@ let createPointThemeConfiguration = [
         mainColor: "#f0f0f5"
     },
     {
-        primaryColor: "rgb(0,0,255)",
+        primaryColor: "rgb(0,0,150)",
         backgroundColor: "red",
         titleColor: "unset",
-        primaryHoverColor: "rgb(0,0,200)",
+        primaryHoverColor: "rgb(0,0,255)",
         mainColor: "white"
     }
 ]
@@ -92,7 +92,7 @@ switcherButton.addEventListener("click", e => {
         documentStyle.setProperty("--primary-color", themes[1].index.primaryColor);
         documentStyle.setProperty("--background-color", themes[1].index.backgroundColor);
         documentStyle.setProperty("--title-color",themes[1].index.titleColor);
-        documentStyle.setProperty("--primary-color-hovered", themes[1].index.primaryColor);
+        documentStyle.setProperty("--primary-color-hovered", themes[1].index.primaryHoverColor);
         documentStyle.setProperty("--main-color", themes[1].index.mainColor);
     }
 })
