@@ -2,17 +2,15 @@
   Ecoleta Next Level Week
 </h1>
 
-![Presentation](.github/presentation.gif)
+<h4 align="center">
+  <img src=".github/presentation.gif"/>
+</h4>
 
 <p align="center">
   <a href="">Tecnologias</a> &nbsp; &nbsp; | &nbsp; &nbsp;
   <a href="">Projeto</a> &nbsp; &nbsp; | &nbsp; &nbsp;
   <a href="">Licença</a>
 </p>
-
-<p>
-  <img src=".github/bethehero.png" width="100%"/>
- </p>
 
 ## Tecnologias
 
