@@ -7,9 +7,8 @@
 </h4>
 
 <p align="center">
-  <a href="">Tecnologias</a> &nbsp; &nbsp; | &nbsp; &nbsp;
-  <a href="">Projeto</a> &nbsp; &nbsp; | &nbsp; &nbsp;
-  <a href="">Licença</a>
+  <a href="#tecnologias">Tecnologias</a> &nbsp; &nbsp; | &nbsp; &nbsp;
+  <a href="#projeto">Projeto</a> &nbsp; &nbsp; | &nbsp; &nbsp;
 </p>
 
 ## Tecnologias
