@@ -15,7 +15,7 @@
 }
 
 #page-create-point header a {
-    color: var(--title-color);
+    color: var(--titleColor);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
 
 form{
     margin: 80px auto;
-    background-color: var(--background-color);
+    background-color: var(--backgroundColor);
     padding: 64px;
     border-radius: 8px;
     max-width: 730px;
@@ -59,7 +59,7 @@ form legend h2{
 }
 
 form legend span {
-    color: var(--title-color);
+    color: var(--titleColor);
     font-size: 14px;
 }
 
@@ -102,7 +102,7 @@ form .field-group .field + .field{
 form button {
     width: 260px;
     height: 56px;
-    background-color: var(--primary-color);
+    background-color: var(--primaryColor);
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -114,7 +114,7 @@ form button {
 }
 
 form button:hover{
-    background-color: var(--primary-color-hovered);
+    background-color: var(--primaryHoverColor);
 }
 
 .items-grid {

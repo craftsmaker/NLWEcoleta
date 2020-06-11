@@ -3,7 +3,7 @@
 
     background: url("../assets/icones/home-background.svg") no-repeat;
     background-position: 35vw bottom;
-    background-color: var(--background-color);
+    background-color: var(--backgroundColor);
 
 }
 
@@ -64,12 +64,12 @@
     display:flex;
     align-items: center;
     margin-top: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--primaryColor);
     transition: 400ms;
 }
 
 #page-home main a:hover{
-    background-color: var(--primary-color-hovered);
+    background-color: var(--primaryHoverColor);
 }
 
 
