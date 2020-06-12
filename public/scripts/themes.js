@@ -5,7 +5,10 @@ let defaultStylesheetVariableValues = {
     backgroundColor: "unset",
     titleColor: "unset",
     primaryHoverColor: "#2fb86e",
-    mainColor: ""
+    mainColor: "",
+    textPrimaryColor: "rgb(255,255,255)",
+    textSecundaryColor: "rgb(200,200,200)",
+    textTertiaryColor: "rgb(200,200,200)"
 }
 
 let stylesheetVariableNames = [
@@ -13,7 +16,10 @@ let stylesheetVariableNames = [
     "BackgroundColor",
     "TitleColor",
     "PrimaryHoverColor",
-    "MainColor"
+    "MainColor",
+    "TextPrimaryColor",
+    "TextSecundaryColor",
+    "TextTertiaryColor",
 ]
 // Get a css variable
 let indexThemeConfiguration = [
@@ -54,18 +60,38 @@ let createPointThemeConfiguration = [
     }
 ]
 
-let themeByDenomination = {
-    main: {
-        index: indexThemeConfiguration[0],
-        createPoint: createPointThemeConfiguration[0]
+let searchResultsThemeConfiguration = [
+    {
+        ...defaultStylesheetVariableValues,
+        primaryColor: "#34cb79",
+        backgroundColor: "unset",
+        titleColor: "unset",
+        primaryHoverColor: "#2fb86e",
+        mainColor: "#f0f0f5"
     },
-    red: {
-        index: indexThemeConfiguration[1],
-        createPoint: createPointThemeConfiguration[1]
+    {
+        ...defaultStylesheetVariableValues,
+        primaryColor: "rgb(0,0,150)",
+        backgroundColor: "#f0f0f5",
+        titleColor: "unset",
+        primaryHoverColor: "rgb(0,0,255)",
+        mainColor: "red",
     }
-}
+]
 
-let themes = [themeByDenomination.main,themeByDenomination.red]
+
+let themes = [
+    {
+        index: indexThemeConfiguration[0],
+        createPoint: createPointThemeConfiguration[0],
+        searchResults: searchResultsThemeConfiguration[0]
+    },
+    {
+        index: indexThemeConfiguration[1],
+        createPoint: createPointThemeConfiguration[1],
+        searchResults: searchResultsThemeConfiguration[1]
+    }
+]
 
 // (variableNames: string[],variableValues: obj) -> void
 function setStylesheetVariables(variableNames, variableValues){
@@ -77,7 +103,6 @@ function setStylesheetVariables(variableNames, variableValues){
     
     variableNames.forEach((name,index) => {
         const propertyName = name[0].toLowerCase() + name.substr(1);
-        console.log(propertyName)
        documentStyle.setProperty( "--" + propertyName,valuesList[index])
     })
 }

@@ -4,6 +4,9 @@
     --primaryHoverColor: #2fb86e;
     --backgroundColor: unset;
     --mainColor: #f0f0f5;
+    --textPrimaryColor: #322153;
+    --textSecundaryColor: #34CB79;
+    --textTeritaryColor: #6C6C80;
 }
 
 *{

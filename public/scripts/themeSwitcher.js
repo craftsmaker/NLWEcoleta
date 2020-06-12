@@ -20,12 +20,14 @@ switcherButton.addEventListener("click", e => {
 
         setLocalStorageItems("index", stylesheetVariableNames, themes[0].index)
         setLocalStorageItems("createPoint", stylesheetVariableNames, themes[0].createPoint)
+        setLocalStorageItems("searchResults", stylesheetVariableNames, themes[0].searchResults)
         
         setStylesheetVariables(stylesheetVariableNames,themes[0].index);
     }
     else{
         setLocalStorageItems("index", stylesheetVariableNames, themes[1].index)
         setLocalStorageItems("createPoint", stylesheetVariableNames, themes[1].createPoint)
+        setLocalStorageItems("searchResults", stylesheetVariableNames, themes[1].searchResults)
 
         setStylesheetVariables(stylesheetVariableNames,themes[1].index);
     }
